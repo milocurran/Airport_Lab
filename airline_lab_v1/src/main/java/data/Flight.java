@@ -77,8 +77,8 @@ public class Flight {
         this.price = price;
     }
 
-    public void DisplayFlightDetail() {
-        int averageFlightCapacity = 220;
+    public void displayFlightDetail() {
+        //int averageFlightCapacity = 220;
 
         System.out.println("-------   Flight:   #" + flightNumber);
         System.out.println("-------   From:      " + from + "    -------");
@@ -87,7 +87,7 @@ public class Flight {
 
         System.out.println("-------   Arrival:   " + arrivalTime);
         System.out.println("-------   Price:    £" + price);
-        System.out.println("------    Capacity:  " + numberOfPassengers + "/" + averageFlightCapacity);
+        System.out.println("------    Capacity:  " + numberOfPassengers);
     }
 
 }
