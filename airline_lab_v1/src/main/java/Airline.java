@@ -8,6 +8,8 @@ public class Airline {
 
     HashMap<Passenger, Flight> passengerBooking;
 
+    ArrayList<AirportBooking> airportBooking;
+
 //    private ArrayList<AirportBooking> passengerBooking;
 //
 //    private ArrayList<ArrayList> completeBookingList;
@@ -16,6 +18,7 @@ public class Airline {
 //        this.passengerBooking = new ArrayList<>();
 //        this.completeBookingList = new ArrayList<>();
         this.passengerBooking = new HashMap<>();
+        this.airportBooking = new ArrayList<>();
     }
 //
 //    public ArrayList<AirportBooking> getPassengerBooking() {
@@ -53,6 +56,11 @@ public class Airline {
         passengerBooking.put(passenger1, flight1);
     }
 
+//    public void displayBooking(){
+//        String booking = passengerBooking.get(passenger1) + passengerBooking.get(flight1);
+//        System.out.println(passengerBooking);
+//    }
+//
 
 
 }

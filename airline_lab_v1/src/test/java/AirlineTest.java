@@ -33,5 +33,4 @@ public class AirlineTest {
         assertEquals(expected, actual);
     }
 
-
 }

@@ -38,14 +38,6 @@ public class Passenger {
         this.passportNumber = passportNumber;
     }
 
-    public String getNationality() {
-        return this.nationality;
-    }
-
-    public void setNationality(String nationality) {
-        this.nationality = nationality;
-    }
-
     public String getEmail() {
         return this.email;
     }
@@ -61,6 +53,23 @@ public class Passenger {
     public void setContactNumber(int contactNumber) {
         this.contactNumber = contactNumber;
     }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public void displayPassengerDetails(){
+        System.out.println("-------   Passenger Name: " + name);
+        System.out.println("-------   Passport Number: " + passportNumber);
+        System.out.println("-------   Nationality: " + nationality);
+        System.out.println("-------   Email: " + email);
+        System.out.println("-------   Contact Number:   " + contactNumber);
+        }
+
 
 
 }
