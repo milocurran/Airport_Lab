@@ -14,26 +14,6 @@ public class AirportBooking {
         this.flightList = new ArrayList<>();
     }
 
-    public void displayFlightsDetails() {
-        int index = 1;
-        System.out.println(
-                "------------------------------------------------------------------------------------------------------------------------------");
-        for (Flight flight : flightList) {
-            System.out.println("                                                 " + index + "-");
-            flight.displayFlightDetail();
-            index++;
-            System.out.println(
-                    "------------------------------------------------------------------------------------------------------------------------------");
-        }
-    }
-
-//    public void displayFlightDetail() {
-//        for (Flight flight : flightList) {
-//            flight.DisplayFlightDetail();
-//            index++;
-//            System.out.println(
-//        }
-
     public ArrayList<Flight> getFlightList() {
         return flightList;
     }

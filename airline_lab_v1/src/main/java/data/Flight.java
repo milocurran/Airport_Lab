@@ -12,16 +12,16 @@ public class Flight {
     double departureTime;
     double arrivalTime;
     double price;
-    int numberOfPassengers;    //list size
+    ArrayList<Passenger> passengers;    //list size
 
     public Flight(String flightNumber, String from, String to, double departureTime, double arrivalTime,
-                  int numberOfPassengers, double price){
+                  double price){
         this.flightNumber = flightNumber;
         this.from = from.toUpperCase();
         this.to = to.toUpperCase();
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
-        this.numberOfPassengers = numberOfPassengers;
+        this.passengers = new ArrayList<>();
         this.price = price;
     }
 
@@ -78,16 +78,12 @@ public class Flight {
     }
 
     public void displayFlightDetail() {
-        //int averageFlightCapacity = 220;
-
         System.out.println("-------   Flight:   #" + flightNumber);
         System.out.println("-------   From:      " + from + "    -------");
         System.out.println("-------   To:        " + to + "      -------");
         System.out.println("-------   Departure: " + departureTime);
-
         System.out.println("-------   Arrival:   " + arrivalTime);
         System.out.println("-------   Price:    £" + price);
-        System.out.println("------    Capacity:  " + numberOfPassengers);
     }
 
 }

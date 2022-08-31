@@ -11,11 +11,11 @@ public class Runner {
         Airline airline = new Airline();
 
         Flight flight1 = new Flight("BA1234", "London", "Istanbul", 12.00,
-                3.00, 100, 150);
+                3.00, 150);
         Flight flight2 = new Flight("BA5678", "Edinburgh", "Malaga", 11.00,
-                2.00, 100, 90);
+                2.00, 90);
         Flight flight3 = new Flight("BA9876", "Manchester", "Paris", 10.00,
-                12.00, 100, 45);
+                12.00, 45);
 
         airportBooking.addNewFlight(flight1);
         airportBooking.addNewFlight(flight2);
@@ -61,14 +61,6 @@ public class Runner {
 
         passenger1.displayPassengerDetails();
 
-//        System.out.println("Please confirm that your personal details are correct");
-//
-//        if (userInput.equals("Yes")) {
-//            airportBooking.displayAvailableFlights();
-//        } else {
-//            System.out.println("Have a lovely day!");
-//        }
-//
         System.out.println("------------------------------");
 
         // Collect user input

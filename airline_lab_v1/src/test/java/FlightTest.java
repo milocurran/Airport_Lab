@@ -9,7 +9,7 @@ public class FlightTest {
     @BeforeEach
     public void setUp() {
         flight = new Flight("BA1234", "London", "Istanbul", 12.00,
-                3.00, 100, 150);
+                3.00, 100);
     }
 
 }

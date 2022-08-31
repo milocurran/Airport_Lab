@@ -19,7 +19,7 @@ public class AirlineTest {
     public void setUp() {
         passenger1 = new Passenger("Colin", 123456789, "British", "colin@email.com", 071234567);
         flight1 = new Flight("BA1234", "London", "Istanbul", 12.00,
-                3.00, 100, 150);
+                3.00, 150);
         passenger2 = new Passenger("Iain", 987654321, "British", "iain@email.com", 077654321);
         passengerBooking = new HashMap<>();
     }
