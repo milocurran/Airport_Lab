@@ -1,6 +1,8 @@
 import data.Flight;
 import data.Passenger;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Runner {
@@ -27,6 +29,18 @@ public class Runner {
         Scanner reader = new Scanner(System.in);
         String userInput = reader.nextLine();
 
+//        // attempting to set up exceptions
+
+//        String result;
+//
+//        try {
+//            String result = userInput.compareTo("Yes");
+//                //airportBooking.displayAvailableFlights();
+//
+//        } catch (Exception exception) {
+//            result = exception.getMessage();
+//        }
+
         if (userInput.equals("Yes")) {
             airportBooking.displayAvailableFlights();
         } else {
@@ -49,11 +63,11 @@ public class Runner {
 
         System.out.println("Please provide us your passport number: ");
 
-        int userPassportNumber = reader.nextInt();
+        long userPassportNumber = reader.nextLong();
 
         System.out.println("What is your contact number? ");
 
-        int userContactNumber = reader.nextInt();
+        long userContactNumber = reader.nextLong();
 
         Passenger passenger1 = new Passenger(userName, userPassportNumber, userNationality, userEmail, userContactNumber);
 
@@ -79,10 +93,13 @@ public class Runner {
                 String userFlightConfirmation = reader2.nextLine();
                 if (userFlightConfirmation.equals("Yes")) {
                     airline.bookPassengerToFlight(passenger1, flightChosen);
-                    System.out.println("You have booked the #" + flightChosen.getFlightNumber() + " flight!");
+                    System.out.println("You have booked the #" + flightChosen.getFlightNumber() + " flight to " + flightChosen.getTo().substring(0,1).toUpperCase() + flightChosen.getTo().substring(1).toLowerCase() + "!");
                 }
             }
         }
+
+//        Flight passenger1Booking = airline.passengerBooking.get(0);
+//        System.out.println(passenger1Booking);
 
     }
 

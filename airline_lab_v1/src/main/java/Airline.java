@@ -19,4 +19,8 @@ public class Airline {
         passengerBooking.put(passenger1, flight1);
     }
 
+//    public Passenger displayBookedFlights() {
+//        return passengerBooking.get(passenger1);
+//    }
+
 }

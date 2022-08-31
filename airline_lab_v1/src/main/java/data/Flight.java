@@ -12,7 +12,7 @@ public class Flight {
     double departureTime;
     double arrivalTime;
     double price;
-    ArrayList<Passenger> passengers;    //list size
+    ArrayList<Passenger> passengers;
 
     public Flight(String flightNumber, String from, String to, double departureTime, double arrivalTime,
                   double price){
@@ -78,12 +78,12 @@ public class Flight {
     }
 
     public void displayFlightDetail() {
-        System.out.println("-------   Flight:   #" + flightNumber);
-        System.out.println("-------   From:      " + from + "    -------");
-        System.out.println("-------   To:        " + to + "      -------");
+        System.out.println("-------   Flight:    #" + flightNumber);
+        System.out.println("-------   From:      " + from);
+        System.out.println("-------   To:        " + to);
         System.out.println("-------   Departure: " + departureTime);
         System.out.println("-------   Arrival:   " + arrivalTime);
-        System.out.println("-------   Price:    £" + price);
+        System.out.println("-------   Price:     £" + price);
     }
 
 }

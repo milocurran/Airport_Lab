@@ -7,12 +7,12 @@ public class Passenger {
 
     int id;
     String name;
-    int passportNumber;
+    long passportNumber;
     String nationality;
     String email;
-    int contactNumber;
+    long contactNumber;
 
-    public Passenger(String passengerName, int passportNumber, String nationality, String email, int contactNumber) {
+    public Passenger(String passengerName, long passportNumber, String nationality, String email, long contactNumber) {
         this.name = passengerName;
         this.passportNumber = passportNumber;
         this.nationality = nationality;
@@ -30,11 +30,11 @@ public class Passenger {
         this.name = passengerName;
     }
 
-    public int getPassportNumber() {
+    public long getPassportNumber() {
         return this.passportNumber;
     }
 
-    public void setPassportNumber(int passportNumber) {
+    public void setPassportNumber(long passportNumber) {
         this.passportNumber = passportNumber;
     }
 
@@ -46,11 +46,11 @@ public class Passenger {
         this.email = email;
     }
 
-    public int getContactNumber() {
+    public long getContactNumber() {
         return this.contactNumber;
     }
 
-    public void setContactNumber(int contactNumber) {
+    public void setContactNumber(long contactNumber) {
         this.contactNumber = contactNumber;
     }
 
